@@ -32,4 +32,11 @@ urlpatterns = [
     url(r'^accounts/', include('registration.backends.default.urls')),
     path('', include('box.urls')),
 
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('box.urls')),
+
+
 ]
